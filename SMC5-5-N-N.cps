@@ -1005,7 +1005,7 @@ function onSection() {
         gAbsIncModal.format(90),
         gMotionModal.format(0), xOutput.format(initialPosition.x), yOutput.format(initialPosition.y)
       );
-      writeBlock(gMotionModal.format(0), gFormat.format(43), zOutput.format(initialPosition.z), hFormat.format(lengthOffset));
+      //writeBlock(gMotionModal.format(0), gFormat.format(43), zOutput.format(initialPosition.z), hFormat.format(lengthOffset));
     } else {
       writeBlock(
         gAbsIncModal.format(90),
