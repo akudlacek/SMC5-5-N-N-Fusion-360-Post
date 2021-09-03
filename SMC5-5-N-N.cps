@@ -411,7 +411,9 @@ function onOpen() {
   }
 
   // absolute coordinates and feed per min
-  writeBlock(gAbsIncModal.format(90), gFeedModeModal.format(94), gFormat.format(91.1), gFormat.format(40), gFormat.format(49), gPlaneModal.format(17));
+  //Removed gFormat.format(91.1) because I think the controller interprets it as a G91 thus puts it into incremental mode
+  //writeBlock(gAbsIncModal.format(90), gFeedModeModal.format(94), gFormat.format(91.1), gFormat.format(40), gFormat.format(49), gPlaneModal.format(17));
+  writeBlock(gAbsIncModal.format(90), gFeedModeModal.format(94), gFormat.format(40), gFormat.format(49), gPlaneModal.format(17));
 
   switch (unit) {
   case IN:
