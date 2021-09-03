@@ -2,7 +2,7 @@
   Copyright (C) 2012-2021 by Autodesk, Inc.
   All rights reserved.
 
-  Mach3Mill post processor configuration.
+  SMC5-5-N-N post processor configuration.
 
   $Revision: 43262 b8c9137bd3ef7bcc6437110256bba039137f5046 $
   $Date: 2021-05-12 11:28:01 $
@@ -10,14 +10,14 @@
   FORKID {12317DF3-FEC5-4509-B402-622F414C7B47}
 */
 
-description = "Mach3Mill";
-vendor = "Artsoft";
-vendorUrl = "http://www.machsupport.com";
+description = "SMC5-5-N-N";
+vendor = "Arin";
+vendorUrl = "https://www.shaogecnc.com/wp-content/uploads/2020/06/SMC5-5-N-N-manual.pdf";
 legal = "Copyright (C) 2012-2021 by Autodesk, Inc.";
 certificationLevel = 2;
 minimumRevision = 45702;
 
-longDescription = "Generic milling post for Mach3.";
+longDescription = "Generic milling post for SMC5-5-N-N.";
 
 extension = "tap";
 setCodePage("ascii");
