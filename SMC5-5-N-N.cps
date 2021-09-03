@@ -60,7 +60,7 @@ properties = {
       {title: "G53", id: "G53"},
       {title: "Clearance Height", id: "clearanceHeight"}
     ],
-    value: "G28",
+    value: "clearanceHeight",
     scope: "post"
   },
   useM6: {
