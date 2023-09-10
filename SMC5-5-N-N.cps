@@ -103,8 +103,8 @@ properties = {
     scope: "post"
   },
   optionalStop: {
-    title: "Optional stop",
-    description: "Outputs optional stop code during when necessary in the code.",
+    title: "Manual tool change stop",
+    description: "Outputs optional stop code after tool change.",
     type: "boolean",
     value: true,
     scope: "post"
@@ -875,7 +875,7 @@ function onSection() {
     onCommand(COMMAND_STOP_SPINDLE);
     setCoolant(COOLANT_OFF);
   
-    if (!isFirstSection() && getProperty("optionalStop")) {
+    if (!isFirstSection() && !getProperty("optionalStop")) {
       onCommand(COMMAND_OPTIONAL_STOP);
     }
 
